@@ -39,4 +39,12 @@ zad7.appendChild(div); // zmiana miejsca elementu
 const  tekst =document.createElement('p');
 tekst.innerHTML="&copy"; // dodawanie tekstu
 div.appendChild(tekst);
-
+//8
+const zad8=document.createElement(='tekst1')
+zad8.innerHTML="<i> Pochylony tekst </i>"
+console.log(zad8)
+const zad8m=document.createElement(='tekst2')
+console.log(zad8m)
+const dodawanie=document.querySelector('header')
+dodawanie.appendChild(zad8)
+dodawanie.appendChild(zad8m)
