@@ -34,9 +34,10 @@ piec.addEventListener('click', function (){
 const szesc = document.querySelector('#button6')
 szesc.addEventListener('click', function (){
     const szesc_jeden = document.querySelector('#z6')
-    if (szesc_jeden.hasAttribute('disabled'))
-    document.getElementById('z6.').disabled = false
+    if (szesc_jeden.hasAttribute('disabled')) {
+        document.getElementById('z6.').disabled = false
         szesc_jeden.innerHTML = 'Można edytować';
+    }
     else{
 
         document.getElementById('z6').disabled = true
@@ -46,3 +47,30 @@ szesc.addEventListener('click', function (){
     console.log((szesc_jeden))
 }
 )
+//8
+ document.querySelector("#tak").addEventListener("click", function () {
+    const osiem  = document.querySelector("#dataset-atributes-element");
+    console.log(osiem.dataset);
+    console.log(osiem.attributes);
+
+    const osiem_kontener = document.querySelector("#dataset-attributes-container");
+    for (const attribute of osiem_kontener.attributes) {
+        let para = document.createElement("p");
+        para.innerHTML = "Atrybut: <b>" + attribute.nodeName
+            + "</b> ma wartość:</b>" + attribute.nodeValue + "</b>";
+        osiem_kontener.appendChild(para)
+
+    }
+})
+//9
+const dziewiec = document.querySelector('#Button9');
+dziewiec.addEventListener('click', function () {
+    let kolory = '0123456789ABCDEF';
+    let kodkoloru = '#';
+    for (let i = 0; i < 6; i++) {
+        kodkoloru += kolory[Math.floor(Math.random() * 16)];
+    }
+    console.log(kodkoloru);
+    document.getElementById('generator').style.backgroundColor = kodkoloru;
+
+});
