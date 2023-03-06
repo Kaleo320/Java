@@ -2,7 +2,7 @@ const elements = document.getElementsByTagName("pre");
 for (let i = 0; i < elements.length; i++) {
     elements[i].style.display = "none";
 }
-function op(obj, id) {
+function dt(obj, id) {
     const x = document.getElementById(obj);
     const elements = document.getElementsByTagName("pre");
     for (let i = 0; i < elements.length; i++) {
@@ -16,8 +16,6 @@ function op(obj, id) {
                 document.getElementById(id).innerHTML = "&#8615;";
                 document.getElementById(id).href = "/";
             }
-        } else {
-            elements[i].style.display = "none";
         }
     }
     return false;
