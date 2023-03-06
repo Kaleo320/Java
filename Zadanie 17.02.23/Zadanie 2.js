@@ -71,6 +71,8 @@ dziewiec.addEventListener('click', function () {
         kodkoloru += kolory[Math.floor(Math.random() * 16)];
     }
     console.log(kodkoloru);
-    document.getElementById('generator').style.backgroundColor = kodkoloru;
+    document.getElementById('' +
+        '' +
+        'generator').style.backgroundColor = kodkoloru;
 
 });
