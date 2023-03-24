@@ -1,0 +1,1 @@
+const chexkbox = document.getElementById(tele2);
