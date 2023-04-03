@@ -12,5 +12,5 @@ checkbox.addEventListener("change", function (){
       telef.classList.add("hide_number");
       telen.classList.add("hide_number");
     }
-console.log('tak')
+console.log('DZIENKI DZIAAAŁA')
 });
