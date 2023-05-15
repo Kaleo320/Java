@@ -3,7 +3,7 @@ const teleo = document.getElementById('2');
 const tele = document.getElementById('3');
 const checkbox = document.getElementById('tele');
 checkbox.addEventListener("change", function (){
-    if(checkbox.checked){
+    if(checkbox.checked) {
         teleo.classList.remove("hide_number");
         telef.classList.remove('hide_number');
         tele.classList.remove('hide_number');
