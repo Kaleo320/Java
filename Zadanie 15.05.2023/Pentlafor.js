@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var input = document.createElement('input');
         input.id = 'input' + i;
         input.name = 'input' + i;
-        input.style.margin = '10px';
+        input.style.margin = '10dpx';
         input.style.boxShadow = '5px 5px lightblue';
         input.placeholder = 'Element numer ' + i;
 
